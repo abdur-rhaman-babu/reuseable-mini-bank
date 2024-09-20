@@ -21,13 +21,13 @@
                   </div>
                   <div class="divider"></div>
                   <div>
-                    <button class="btn btn-success">Add Money</button>
-                    <button class="btn btn-warning">Cash Out</button>
-                    <button class="btn btn-error">Transection</button>
+                    <button id="add-feature" class="btn btn-success">Add Money</button>
+                    <button id="cashout-feature" class="btn btn-warning">Cash Out</button>
+                    <button id="transection-feature" class="btn btn-error">Transection</button>
                   </div>
                   <div class="divider"></div>
                   <!-- add money start -->
-                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
+                  <div id="addmoney" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -49,7 +49,7 @@
                   </div>
                   <!-- add money end -->
                    <!-- cashout start -->
-                   <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                   <div id="cashout" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -69,12 +69,14 @@
                     </form>
                   </div>
                     <!-- cashout end -->
-              </div>
+                    <div id="transection" class="hidden"><h1>Transection history</h1></div>
+                  </div>
             </div>
           </div>
     </main>
     <script src="js/utilities.js"></script>
     <script src="js/addMoney.js"></script>
     <script src="js/cashout.js"></script>
+    <script src="js/feature.js"></script>
     </body>
 </html>

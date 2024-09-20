@@ -10,5 +10,10 @@ function getTextFieldValueById (id){
 }
 
 function showSectionById (id){
+ document.getElementById('addmoney').classList.add('hidden')
+ document.getElementById('cashout').classList.add('hidden')
+ document.getElementById('transection').classList.add('hidden')
+
     const showSection = document.getElementById(id)
-}
+    return showSection;
+} 
