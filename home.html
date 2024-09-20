@@ -15,7 +15,7 @@
               <div class="artboard artboard-demo phone-3">
                 <div class="stats shadow">
                     <div class="stat">
-                      <div class="stat-value">9400</div>
+                      <div id="previousAmount" class="stat-value">9400</div>
                       <div class="stat-desc">Available Balance</div>
                     </div>
                   </div>
@@ -33,17 +33,17 @@
                         <label class="label">
                           <span class="label-text">Add Amount</span>
                         </label>
-                        <input type="text" placeholder="Enter Amount" class="input input-bordered" required />
+                        <input id="add-input-amount" type="text" placeholder="Enter Amount" class="input input-bordered" required />
                       </div>
                       <div class="form-control">
                         <label class="label">
                           <span class="label-text">Pin</span>
                         </label>
-                        <input type="password" placeholder="Pin Number" class="input input-bordered" required />
+                        <input id="add-pin-number" type="password" placeholder="Pin Number" autocomplete="off" class="input input-bordered" required />
                        
                       </div>
                       <div class="form-control mt-6">
-                        <button class="btn btn-primary">Add Money</button>
+                        <button id="add-money-btn" class="btn btn-primary">Add Money</button>
                       </div>
                     </form>
                   </div>
@@ -73,4 +73,7 @@
             </div>
           </div>
     </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/addMoney.js"></script>
+    </body>
 </html>

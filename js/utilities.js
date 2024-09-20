@@ -4,3 +4,7 @@ function getInputFieldValueById(id){
     return inputValue;
 }
 
+function getTextFieldValueById (id){
+    const inputInnerText = document.getElementById(id).innerText;
+    return inputInnerText;
+}
