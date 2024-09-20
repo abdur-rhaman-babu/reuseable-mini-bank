@@ -6,7 +6,7 @@ document.getElementById('add-money-btn').addEventListener('click',function(event
     const addPinNumber = getInputFieldValueById('add-pin-number')
     const balance = getTextFieldValueById('previousAmount')
 
-    if ( addPinNumber === '1234'){
+    if ( addPinNumber === '1234' && addAmount > 0){
        
         const amount = parseFloat(addAmount)
         const currentBalance = parseFloat(balance)
