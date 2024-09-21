@@ -14,6 +14,5 @@ function showSectionById (id){
  document.getElementById('cashout').classList.add('hidden')
  document.getElementById('transection').classList.add('hidden')
 
-    const showSection = document.getElementById(id)
-    return showSection;
+ document.getElementById(id).classList.remove('hidden')
 } 

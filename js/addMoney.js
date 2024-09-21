@@ -13,6 +13,11 @@ document.getElementById('add-money-btn').addEventListener('click',function(event
         const newBalance = amount + currentBalance;
         document.getElementById('previousAmount').innerText = newBalance;
 
+        // transection history
+        const p = document.createElement('p');
+        p.innerText = `Added ${amount} tk. New balance ${newBalance}`;
+        document.getElementById('transection-history').appendChild(p)
+
     }else{
         alert('something is worng went, please tryagain')
     }
